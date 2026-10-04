@@ -1,0 +1,20 @@
+{
+  "name": "isolated-fake-accounting-mcp-test",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Synthetic-only MCP test fixture. Never connects to live accounting services.",
+  "engines": { "node": ">=22 <25" },
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "node --test --test-concurrency=1 test/*.test.js",
+    "test:coverage": "node --test --experimental-test-coverage --test-concurrency=1 test/*.test.js",
+    "check": "node --check src/store.js && node --check src/server.js && node --check src/main.js && node --check scripts/demo.js && npm test",
+    "demo": "node scripts/demo.js",
+    "package:release": "node scripts/package-release.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.0",
+    "zod": "4.6.5"
+  }
+}

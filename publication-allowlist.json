@@ -1,0 +1,17 @@
+[
+  ".gitignore",
+  "README.md",
+  "CLIENT_ACCEPTANCE.md",
+  "publication-allowlist.json",
+  "package.json",
+  "package-lock.json",
+  "render.yaml",
+  "src/fixtures.js",
+  "src/store.js",
+  "src/server.js",
+  "src/main.js",
+  "scripts/demo.js",
+  "scripts/package-release.js",
+  "test/store.test.js",
+  "test/http.test.js"
+]

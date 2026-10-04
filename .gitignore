@@ -1,0 +1,8 @@
+node_modules/
+*.sock
+*.log
+.env
+coverage/
+evidence/client-setup.json
+evidence/
+release/
